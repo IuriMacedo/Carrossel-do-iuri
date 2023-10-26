@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: font1;
+    src: url(fontes/Friday13SH.ttf);
+    font-family: font1;
+    src: url(fontes/Friday13v12.ttf);
+}
+
+header h1{
+    font-family: font1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-size: 150%;
+    background-color: #abb0b1;
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 325px;
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.bar{
+    background-color: #4f32f5;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar :hover{
+background: #0bd125;
+} 
+
+input{
+    display: none;
+} 
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem{
+    width:16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked ~.img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~.img1{
+margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~.img1{
+margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~.img1{
+margin-left: -50%;
+}
+
+#imagem5:checked ~.img1{
+margin-left: -66.6666666666%;    
+}
+
+#imagem6:checked ~.img1{
+margin-left: -83.33333333333%;    
+}
+
+p{
+    text-align: center;
+    font-size: 130%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+h1{
+    text-align: center;
+    background-color: #B22222;
+}
+
+footer p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
